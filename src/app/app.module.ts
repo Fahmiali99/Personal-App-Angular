@@ -1,16 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './component/common/navbar/navbar.component';
+import { FooterComponent } from './component/common/footer/footer.component';
+import { HomeComponent } from './component/pages/home/home.component';
+import { AboutComponent } from './component/pages/about/about.component';
+import { PortfolioComponent } from './component/pages/portfolio/portfolio.component';
+import { ResumeComponent } from './component/pages/resume/resume.component';
+
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    HomeComponent,
+    AboutComponent,
+    PortfolioComponent,
+    ResumeComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    MatSlideToggleModule,
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

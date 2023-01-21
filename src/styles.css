@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  color: #3b82f6;
+}
+
+.theme-light {
+  background-image: linear-gradient(
+    to top,
+    #ffffff,
+    #fcfcff,
+    #f7faff,
+    #f2f8ff,
+    #ebf7ff,
+    #e7f5ff,
+    #e2f4ff,
+    #def2ff,
+    #ddefff,
+    #dfebff,
+    #e2e6ff,
+    #e8e1ff
+  );
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.theme-dark {
+  background-image: linear-gradient(
+    to right top,
+    #182c4a,
+    #172844,
+    #15243e,
+    #142038,
+    #121c32,
+    #121c32,
+    #121c32,
+    #121c32,
+    #142038,
+    #15243e,
+    #172844,
+    #182c4a
+  );
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}

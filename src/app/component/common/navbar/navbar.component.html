@@ -1,12 +1,12 @@
 <nav
-  class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+  class="px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
 >
   <div class="container mx-auto">
     <div class="lg:mx-64">
       <div class="flex flex-wrap items-center justify-between mx-auto">
         <a href="https://flowbite.com/" class="flex items-center">
-          <img [src]="LogoNavbar" class="h-6 mr-3 sm:h-9 images" alt="Logo" />
-          <span class="self-center text-xl font-semibold whitespace-nowrap"
+          <img [src]="LogoNavbar" class="h-10 mr-3 sm:h-10" alt="Logo" />
+          <span class="self-center text-2xl font-bold whitespace-nowrap"
             >Li.</span
           >
         </a>
@@ -47,7 +47,7 @@
         >
           <ul
             *ngFor="let person of navbar; let i = index"
-            class="flex flex-col p-0 sm:p-3 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+            class="flex flex-col p-0 sm:p-3 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:font-medium"
           >
             <li
               [routerLinkActive]="['active']"

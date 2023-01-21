@@ -12,6 +12,8 @@ import { ResumeComponent } from './component/pages/resume/resume.component';
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
+import { ProgrammingComponent } from './component/pages/about/detail/programming/programming.component';
+import { ContactComponent } from './component/pages/about/detail/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { MatIconModule } from '@angular/material/icon';
     AboutComponent,
     PortfolioComponent,
     ResumeComponent,
+    ProgrammingComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

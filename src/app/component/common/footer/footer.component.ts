@@ -16,19 +16,19 @@ export class FooterComponent {
     {
       id: 1,
       title: 'Instagram',
-      Icons: 'link',
+      Icons: 'fa-brands fa-instagram',
       href: 'https://www.instagram.com/fahmi_ali13/',
     },
     {
       id: 1,
       title: 'Linkedin',
-      Icons: 'link',
+      Icons: 'fa-brands fa-linkedin-in',
       href: 'https://www.linkedin.com/in/fahmialihusni/',
     },
     {
       id: 1,
       title: 'GitHub',
-      Icons: 'link',
+      Icons: 'fa-brands fa-github',
       href: 'https://github.com/Fahmiali99',
     },
   ];

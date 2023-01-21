@@ -1,5 +1,22 @@
-<body>
-  <div class="h-screen flex items-center">
-    <h1 class="text-1xl">About</h1>
+<div class="pb-4 w-full h-full min-h-[calc(100vh-3rem)] px-2 md:px-0">
+  <div class="pt-20">
+    <div class="block items-center">
+      <div class="flex justify-center">
+        <img [src]="ProfileImg" alt="" width="200" />
+      </div>
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-medium">About</h1>
+        <div *ngFor="let person of about; let i = index">
+          <div class="text-justify text-base md:text-lg">
+            <p class="py-1">{{ person.subAbout }}</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-medium">Skill</h1>
+        <app-programming></app-programming>
+        <app-contact></app-contact>
+      </div>
+    </div>
   </div>
-</body>
+</div>

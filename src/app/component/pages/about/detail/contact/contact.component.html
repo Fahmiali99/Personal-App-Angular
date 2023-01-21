@@ -1,0 +1,14 @@
+<div>
+  <h1 class="py-3 text-lg font-medium">Programmig</h1>
+  <div *ngFor="let person of contact; let i = index">
+    <div class="flex my-1">
+      <p>{{ person.title }}</p>
+      <p class="mx-2">-</p>
+      <a (click)="goToLink(person.href)">
+        <p className="underline text-base md:text-lg">
+          {{ person.href }}
+        </p>
+      </a>
+    </div>
+  </div>
+</div>

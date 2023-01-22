@@ -1,5 +1,45 @@
-<body>
-  <div class="h-screen flex items-center">
-    <h1 class="text-1xl">Portfolio</h1>
+<div>
+  <div class="pt-12 pb-4 w-full xl:min-h-[calc(100vh-3rem)] px-2 md:px-0">
+    <div>
+      <h1 class="text-2xl font-semibold">Portfolio</h1>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-3 gap-4 my-5"
+      >
+        <div *ngFor="let project of portfolio">
+          <div class="rounded-lg shadow-md">
+            <div class="w-full">
+              <button class="text-left">
+                <div>
+                  <img class="rounded-t-lg" [src]="project.image" alt="" />
+                </div>
+                <div class="bg-white rounded rounded-b-lg">
+                  <div class="p-5">
+                    <h5
+                      class="mb-2 text-2xl font-bold tracking-tight text-black"
+                    >
+                      {{ project.title }}
+                    </h5>
+
+                    <p class="mb-3 font-normal dark:text-gray-400">
+                      {{ project.story }}
+                    </p>
+
+                    <div class="flex">
+                      <div *ngFor="let tech of project.technology">
+                        <div class="mr-1 py-0.5 rounded border shadow-md ...">
+                          <p class="mx-2 text-xs text-black">
+                            {{ tech.title }}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</body>
+</div>

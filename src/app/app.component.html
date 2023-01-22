@@ -1,8 +1,9 @@
-<div class="h-auto sm:h-auto container mx-auto">
+<div >
     <app-navbar  (darkModeSwitched)="switchMode($event)" /> 
+    <div class="h-auto sm:h-auto container mx-auto">
     <div class="lg:mx-64">
-        
         <router-outlet />
         <app-footer />
+    </div>
     </div>
 </div>

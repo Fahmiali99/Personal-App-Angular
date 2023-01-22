@@ -14,7 +14,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { ProgrammingComponent } from './component/pages/about/detail/programming/programming.component';
 import { ContactComponent } from './component/pages/about/detail/contact/contact.component';
-
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +32,7 @@ import { ContactComponent } from './component/pages/about/detail/contact/contact
     AppRoutingModule,
     MatSlideToggleModule,
     MatIconModule,
+    PdfViewerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

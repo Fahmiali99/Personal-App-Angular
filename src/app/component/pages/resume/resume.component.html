@@ -1,5 +1,35 @@
 <body>
-  <div class="h-screen flex items-center">
-    <h1 class="text-1xl">Resume</h1>
+  <div>
+    <div>
+      <h1 class="text-center font-medium text-3xl sm:text-3xl pt-5">Resume</h1>
+      <p class="text-center my-4">
+        This is my resume, and all about me at inside
+      </p>
+      <div class="flex justify-center">
+        <a
+          href="/assets/resume/resume.pdf"
+          download="Fahmi_Ali_Husni.pdf"
+          value="download"
+          class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        >
+          <span class="flex items-center">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <p class="mx-2">Download CV</p>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="py-5 sm:py-10">
+        <pdf-viewer
+          [src]="pdfSrc"
+          [render-text]="true"
+          [original-size]="false"
+          [show-all]="false"
+          class="min-w-full flex justify-center shadow ..."
+          style="height: 1346px"
+        ></pdf-viewer>
+      </div>
+    </div>
   </div>
 </body>

@@ -166,6 +166,4 @@ export class PortfolioComponent implements OnInit {
   ];
 
   ngOnInit(): void {}
-
-  constructor() {}
 }

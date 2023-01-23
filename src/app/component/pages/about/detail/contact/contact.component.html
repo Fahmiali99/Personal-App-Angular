@@ -1,15 +1,17 @@
-<div *ngFor="let data of contact">
-  <h1 class="text-2xl sm:text-3xl font-medium">{{ data.title }}</h1>
-  <p className="py-1 text-base md:text-lg">{{ data.about }}</p>
-  <div *ngFor="let detail of data.subContact">
-    <div class="flex my-1">
-      <p>{{ detail.title }}</p>
-      <p class="mx-2">-</p>
-      <button (click)="goToLink(detail.href)">
-        <p class="underline text-base md:text-lg">
-          {{ detail.href }}
-        </p>
-      </button>
+<div class="">
+  <div *ngFor="let data of contact">
+    <h1 class="text-2xl sm:text-3xl font-medium pb-2">{{ data.title }}</h1>
+    <p className="py-1 text-base md:text-lg ">{{ data.about }}</p>
+    <div *ngFor="let detail of data.subContact">
+      <div class="flex my-1">
+        <p>{{ detail.title }}</p>
+        <p class="mx-2">-</p>
+        <button (click)="goToLink(detail.href)">
+          <p class="underline text-base md:text-lg">
+            {{ detail.href }}
+          </p>
+        </button>
+      </div>
     </div>
   </div>
 </div>

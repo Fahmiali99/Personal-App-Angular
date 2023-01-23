@@ -1,4 +1,4 @@
-<div class="pb-4 w-full h-full min-h-[calc(100vh-3rem)] px-2 md:px-0">
+<div class="w-full h-full min-h-[calc(100vh-3rem)] px-2 md:px-0">
   <div class="pt-20">
     <div class="block items-center">
       <div *ngFor="let data of about">
@@ -9,7 +9,7 @@
           <h1 class="text-2xl sm:text-3xl font-medium">{{ data.title }}</h1>
           <div *ngFor="let detail of data.about">
             <div class="text-justify text-base md:text-lg">
-              <p class="py-1">{{ detail.subAbout }}</p>
+              <p class="py-2">{{ detail.subAbout }}</p>
             </div>
           </div>
         </div>
